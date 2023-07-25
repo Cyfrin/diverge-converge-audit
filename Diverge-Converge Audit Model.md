@@ -17,6 +17,8 @@ This model is meticulously crafted to enhance the efficiency of the audit proces
 
 Being the first model of its kind to incorporate multiple distinct phases of auditing, we anticipate that it will offer unmatched quality in audits and foresee its wide adoption in the Web3 space.
 
+// Traditional firms will not take this statement well. I don't think we should position anything as "better than traditional audits". A similar stance was taken by Sherlock in the DSS Auditor panel, and the trad-auditors killed him.
+
 # 1. Introduction
 
 ## 1.1 Background
@@ -54,6 +56,8 @@ In the context of Web3 application security, defining what makes an audit "good"
 A high-quality audit aims for an ideal state we define as **Perfectness**. Perfectness represents a scenario where the audited codebase is entirely devoid of vulnerabilities. The quest for perfectness makes the codebase progressively more secure and reliable as we inch closer to this ideal state. The role of auditors is pivotal in this journey - as they dig deeper into the code, unearthing and resolving more bugs and vulnerabilities, the reservoir of potential vulnerabilities diminishes. This ongoing cycle of discovery and resolution of vulnerabilities fuels a positive feedback loop in the audit process. Each vulnerability spotted and fixed nudges us nearer to perfectness, thereby establishing a cycle of continuous enhancement towards a totally secure codebase.
 
 The pursuit of audit perfectness encompasses two critical elements: **Exploit Quality** and **Consult Quality**.
+
+// Reformat the following sections. The titles and content currently feature on the same line of the bullet points
 
 - Exploit Quality
   Exploit Quality is a measure of the audit's proficiency in detecting and evaluating potential vulnerabilities in the codebase. The objective is to unearth and address as many vulnerabilities as possible, reducing the pool of remaining vulnerabilities and advancing towards perfectness.
@@ -159,7 +163,11 @@ Despite the high efficiency of the crowd-sourced contest-based audit model, it i
 
 - Often, the audit is conducted as a singular event, with no follow-up review to verify the rectification of identified vulnerabilities unless the client requests and pays for a separate review. This presents a significant issue as the protocol codebase isn't scrutinized post-mitigation.
 - Auditors independently traverse the entire process, from document review to codebase scrutiny, with minimal collaboration. This lack of cooperative brainstorming is a notable drawback, as it limits the opportunity for auditors to learn from each other.
+
+// and results in duplicated / wasted work across the pool of auditors
 - The model's reward structure often results in diminished returns for duplicate submissions. This can lead to a situation where a critical finding fetches a small reward, while an edge-case of medium risk earns a larger reward.
+
+// Hmmm, I'd suggest that this is maybe a good thing. It incentivises participants to ALSO look for MED and not just go for CRITs.
 
 ## 3.4 Hybrid Audit Model
 
@@ -194,6 +202,8 @@ This model shares similar limitations with the traditional private audit model.
 
 After examining the existing audit models, we present a summarized comparison of their strengths and weaknesses in the table below. The grades A, B, and C are used, with A being the highest.
 Please note that these grades are based on our analysis and subjective estimation, and may not be entirely precise.
+
+// Let's chat about the figures in this table. For example: I would say Cyfrin's "Incentive for dedication" is crazy high, because our reputation is at stake, the same for our "Disincentive for apathy". A poor report with little effort would be very bad for us.
 
 | Aspect                         | Traditional Firm | Code4rena | Sherlock | Spearbit | AuditOne |
 | ------------------------------ | ---------------- | --------- | -------- | -------- | -------- |
@@ -230,6 +240,8 @@ We propose a novel audit model, the Diverge-Converge Model, designed to enhance 
 
 ![Phases](img/phases.png "Phases")
 
+// Does the client receive a report after each phase? That would be the most benificial, because the client can apply changes at each stage, incrementally making the code more secure.
+
 #### Objectives of the Proposed Model
 
 The Diverge-Converge Model emphasizes the following objectives:
@@ -252,6 +264,8 @@ The Diverge-Converge Model engages several roles.
 - **Judge**: The individual or organization that evaluates the findings from all phases. The judge, chosen from a reputable group in the Web3 space, is incentivized by a fixed percentage of the reward pool.
 - **Host**: The individual or organization that oversees the audit process. The host sets up the audit process and ensures its timely completion. The host is incentivized by a fixed fee above the reward pool.
 
+// Who is a host? What’s the incentive to adopt this model rather than to run a competitive audits platform, or a traditional audit firm? This seems far more _involved_ than both of those things, which means hosts would expect more compensation on top of the pool.
+
 The Diverge-Converge Model also involves several terms.
 
 - **Protocol Difficulty**: Defined by the formula `difficulty=f(SLOC,complexity)`, where SLOC and complexity are defined by [`solidity-metrics`](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-metrics). The difficulty will range in (0, 1].
@@ -263,6 +277,8 @@ The Diverge-Converge Model also involves several terms.
 
   $ES=C_p*C_d*(N_H*10+N_M*3+N_L)$, where $C_p$ and $C_d$ represent the phase factor and protocol difficulty.
 
+// We should compile evidence to back up these calcs: examples of existing audits and projects using this calculation, and analyze whether we get the correct results. It would also be good to see these numbers against protocols that were audited, and hacked, to see the relationship between this score and hacks.
+
   e.g. If an auditor found H3 M2 L10 in phase 1 and the difficulty is 0.8, the exploit score will be $0.5*0.8*(3*10+2*3+0.1*10)=14.8$.
 
   The exploit score can be specific to an auditor or a phase.
@@ -273,6 +289,8 @@ The Diverge-Converge Model also involves several terms.
   $AS = AS + ES * (1 - PS)$ for the lead auditor
   $AS = AS + ES$ for other auditors.
   We note that the performance score can both increase and decrease the auditor score for the lead auditor.
+
+// How does this affect new auditors into the system?
 
 ## 4.2 Phases
 
@@ -335,6 +353,8 @@ Upon submission of a finding, the judges will review it and decide its validity 
 
 Valid findings are published on the project board, allowing the protocol team to initiate mitigation immediately.
 
+// Is this board public? I think it should be.
+
 The lead auditor is also involved in this phase and is incentivized to continue exploring the protocol to find more vulnerabilities. Although the lead auditor's findings will not be rewarded as they are considered "known issues from Phase 1", their score will be updated accordingly. The dynamic structure of the reward pool and audit score incentivizes the lead auditor to identify more vulnerabilities.
 
 Public auditors are incentivized enough due to the lack of allowance for duplicate findings, a significant difference from other public contest models where rewards decrease significantly if there are duplicate findings.
@@ -352,6 +372,8 @@ The validity and severity of the findings are determined by a 2-of-3 majority am
 #### Outputs
 
 The output of this phase is the Audit Report V2.0, containing all findings.
+
+// Does the protocol team get access to this and make changes before the final phase?
 
 ### 4.2.3 Phase 3: Selective Competition
 
@@ -404,6 +426,8 @@ The Client bears the cost of the audit, referred to as the reward pool, and the 
 - **Dynamic Pool**: A fixed percentage ($P_D\%$) of the reward pool is reserved as a dynamic pool. This pool will be rewarded to the lead auditor or the bounty hunters based on the exploit score from each phase. It is recommended that $P_D = 50 - P_L$.
 - **Selective Competition Pool**: A fixed percentage ($P_C\%$) of the reward pool is reserved for the selective competition pool and is used to incentivize the contestants to identify vulnerabilities in the protocol **AFTER** the mitigation of findings from the second phase. It is recommended that $10 \leq P_C \leq 15$. As this phase allows for LOW risks, this pool is likely always to be distributed to the contestants.
 - **Judge**: The judge is involved in all phases and incentivized by a fixed guaranteed percentage ($P_J\%$) of the reward pool. It is recommended that $5 \leq P_J \leq 15$.
+
+// The host charges on top of the total pool, right?
 
 ### Default Pool Structure
 
