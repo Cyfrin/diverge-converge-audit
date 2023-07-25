@@ -284,7 +284,7 @@ The Protocol team should provide the source code repository access along with al
 
 #### Duration
 
-The lead auditor estimates the necessary duration for this phase. The duration tends to be a tight estimate as the next phase will have the same duration, while the lead auditor can win the dynamic pool if he outperforms the public auditors. This estimated duration is denoted as \(L_P\). The Host can decide on the duration based on the protocol's complexity and the lead auditor's estimation. Note that this duration estimation is vital, as it affects the total cost of the audit and is usually determined during the negotiation between the Client and the Host.
+The lead auditor estimates the necessary duration for this phase. The duration tends to be a tight estimate as the next phase will have the same duration, while the lead auditor can win the dynamic pool if he outperforms the public auditors. This estimated duration is denoted as $L_P$. The Host can decide on the duration based on the protocol's complexity and the lead auditor's estimation. Note that this duration estimation is vital, as it affects the total cost of the audit and is usually determined during the negotiation between the Client and the Host.
 
 #### Execution
 
@@ -325,7 +325,7 @@ All outputs from Phase 1 are transferred to Phase 2. Additionally, a communicati
 
 #### Duration
 
-This phase is a time-bound public bug bounty. The duration is typically the same as the duration allotted to the lead auditor, ensuring that the public auditors have ample time to review the protocol and identify vulnerabilities. As they begin with the lead auditor's comments, walkthrough explanation, and the audit report, this time is expected to be sufficient. We denote the bounty duration as \(L_B\) and by default, we assume \(L_B = L_P\). The Host can adjust the bounty duration if necessary.
+This phase is a time-bound public bug bounty. The duration is typically the same as the duration allotted to the lead auditor, ensuring that the public auditors have ample time to review the protocol and identify vulnerabilities. As they begin with the lead auditor's comments, walkthrough explanation, and the audit report, this time is expected to be sufficient. We denote the bounty duration as $L_B$ and by default, we assume $L_B = L_P$. The Host can adjust the bounty duration if necessary.
 
 #### Execution
 
@@ -367,7 +367,7 @@ A new communication channel is opened between the protocol team and the contesta
 
 #### Duration
 
-This phase is a time-bound competition. The Host, in consultation with the lead auditor, estimates the necessary duration for this phase, typically recommended to be between 3 to 7 days. We denote the contest duration as \(L_C\), with a default assumption of \(L_C = 5\). The Host can adjust the contest duration if necessary.
+This phase is a time-bound competition. The Host, in consultation with the lead auditor, estimates the necessary duration for this phase, typically recommended to be between 3 to 7 days. We denote the contest duration as $L_C$, with a default assumption of $L_C = 5$. The Host can adjust the contest duration if necessary.
 
 #### Execution
 
@@ -383,7 +383,7 @@ Once judging concludes, the Host delivers the Audit Report V3.0, containing all 
 
 #### Judging
 
-The validity and severity of the findings are determined by a 2-of-3 majority among the Judge, protocol team, and the lead auditor. Judges are incentivized to complete the judging process in a timely manner. We denote the judging duration as \(L_J\), with a default assumption of \(L_J = 3\). The Host can adjust the judging duration if necessary. It's noteworthy that this contest judging differs from other judgments in that it involves a smaller number of findings.
+The validity and severity of the findings are determined by a 2-of-3 majority among the Judge, protocol team, and the lead auditor. Judges are incentivized to complete the judging process in a timely manner. We denote the judging duration as $L_J$, with a default assumption of $L_J = 3$. The Host can adjust the judging duration if necessary. It's noteworthy that this contest judging differs from other judgments in that it involves a smaller number of findings.
 
 #### Outputs
 
@@ -391,7 +391,7 @@ The output of this phase is the Audit Report V3.2, containing all findings and c
 
 ### 4.2.4 Phase 4: Final Review
 
-The Host reviews the entire process and generates the final audit report. The lead auditor is encouraged to revise the system analysis report based on the deeper understanding of the protocol acquired during the process. We denote the duration of this phase as \(L_F\) with a default assumption of \(L_F = 2\).
+The Host reviews the entire process and generates the final audit report. The lead auditor is encouraged to revise the system analysis report based on the deeper understanding of the protocol acquired during the process. We denote the duration of this phase as $L_F$ with a default assumption of $L_F = 2$.
 
 ## 4.3 Reward Pool Structure
 
@@ -399,45 +399,45 @@ The Client bears the cost of the audit, referred to as the reward pool, and the 
 
 ![Pool](img/pool.png "Pool")
 
-- **Lead Auditor**: The lead auditor is greatly incentivized with a fixed guaranteed percentage (\(P_L\%\)) of the reward pool. It is recommended that \(20 \leq P_L \leq 50\).
-- **Bug Bounty**: A fixed percentage (\(P_B\%\)) of the reward pool is reserved for the bug bounty and is used to incentivize the public to identify vulnerabilities in the protocol **AFTER** the mitigation of findings from the first phase. It is recommended that \(P_L \leq P_B < 50\). If no vulnerabilities are found during the bug bounty phase, the bug bounty pool is distributed to the lead auditor.
-- **Dynamic Pool**: A fixed percentage (\(P_D\%\)) of the reward pool is reserved as a dynamic pool. This pool will be rewarded to the lead auditor or the bounty hunters based on the exploit score from each phase. It is recommended that \(P_D = 50 - P_L\).
-- **Selective Competition Pool**: A fixed percentage (\(P_C\%\)) of the reward pool is reserved for the selective competition pool and is used to incentivize the contestants to identify vulnerabilities in the protocol **AFTER** the mitigation of findings from the second phase. It is recommended that \(10 \leq P_C \leq 15\). As this phase allows for LOW risks, this pool is likely always to be distributed to the contestants.
-- **Judge**: The judge is involved in all phases and incentivized by a fixed guaranteed percentage (\(P_J\%\)) of the reward pool. It is recommended that \(5 \leq P_J \leq 15\).
+- **Lead Auditor**: The lead auditor is greatly incentivized with a fixed guaranteed percentage ($P_L\%$) of the reward pool. It is recommended that $20 \leq P_L \leq 50$.
+- **Bug Bounty**: A fixed percentage ($P_B\%$) of the reward pool is reserved for the bug bounty and is used to incentivize the public to identify vulnerabilities in the protocol **AFTER** the mitigation of findings from the first phase. It is recommended that $P_L \leq P_B < 50$. If no vulnerabilities are found during the bug bounty phase, the bug bounty pool is distributed to the lead auditor.
+- **Dynamic Pool**: A fixed percentage ($P_D\%$) of the reward pool is reserved as a dynamic pool. This pool will be rewarded to the lead auditor or the bounty hunters based on the exploit score from each phase. It is recommended that $P_D = 50 - P_L$.
+- **Selective Competition Pool**: A fixed percentage ($P_C\%$) of the reward pool is reserved for the selective competition pool and is used to incentivize the contestants to identify vulnerabilities in the protocol **AFTER** the mitigation of findings from the second phase. It is recommended that $10 \leq P_C \leq 15$. As this phase allows for LOW risks, this pool is likely always to be distributed to the contestants.
+- **Judge**: The judge is involved in all phases and incentivized by a fixed guaranteed percentage ($P_J\%$) of the reward pool. It is recommended that $5 \leq P_J \leq 15$.
 
 ### Default Pool Structure
 
-The default pool structure is assumed to be \(P_L=30\), \(P_B=30\), \(P_D=20\), \(P_C=10\), \(P_J=10\).
+The default pool structure is assumed to be $P_L=30$, $P_B=30$, $P_D=20$, $P_C=10$, $P_J=10$.
 
 ## 4.4 Process Overview
 
 The overall process is as follows, assuming the default pool structure.
 
-| Phase                    | Reward     | Participant       | Duration     | Result                                                            |
-| ------------------------ | ---------- | ----------------- | ------------ | ----------------------------------------------------------------- |
-| Private Audit            | 30% (+20%) | Lead Auditor      | \(L_P\) days | Audit Report V1, System Analysis Report V1, Diagrams, Walkthrough |
-| Public Time-Boxed Bounty | 30% (+20%) | Public            | \(L_B\) days | Audit Report V2                                                   |
-| Selective Contest        | 10%        | Selected Auditors | \(L_C\) days | Audit Report V3                                                   |
-| Final Review             | 0          | Lead Auditor      | \(L_F\) days | Final Audit Report, Final System Analysis Report                  |
+| Phase                    | Reward     | Participant       | Duration   | Result                                                            |
+| ------------------------ | ---------- | ----------------- | ---------- | ----------------------------------------------------------------- |
+| Private Audit            | 30% (+20%) | Lead Auditor      | $L_P$ days | Audit Report V1, System Analysis Report V1, Diagrams, Walkthrough |
+| Public Time-Boxed Bounty | 30% (+20%) | Public            | $L_B$ days | Audit Report V2                                                   |
+| Selective Contest        | 10%        | Selected Auditors | $L_C$ days | Audit Report V3                                                   |
+| Final Review             | 0          | Lead Auditor      | $L_F$ days | Final Audit Report, Final System Analysis Report                  |
 
 ## 4.5 Estimation of Time and Cost
 
 The entire process's cost can be estimated starting from the cost of the lead auditor and the duration of their engagement.
 
-As previously mentioned, the lead auditor estimates the duration for Phase 1 as \(L_P\) days, and the Host sets the duration for the remaining phases as \(L_B\), \(L_C\), \(L_F\) days. Due to the dynamic pool structure, the lead auditor is motivated to estimate the duration accurately.
+As previously mentioned, the lead auditor estimates the duration for Phase 1 as $L_P$ days, and the Host sets the duration for the remaining phases as $L_B$, $L_C$, $L_F$ days. Due to the dynamic pool structure, the lead auditor is motivated to estimate the duration accurately.
 
-Let's assume the lead auditor's daily cost for 100% dedication is \(C_L\).
+Let's assume the lead auditor's daily cost for 100% dedication is $C_L$.
 
-We estimate the lead auditor's dedication for each phase as follows: \(D_P = 100\%\), \(D_B = 50\%\), \(D_C = 100\%\), \(D_F = 0\%\).
+We estimate the lead auditor's dedication for each phase as follows: $D_P = 100\%$, $D_B = 50\%$, $D_C = 100\%$, $D_F = 0\%$.
 
-The total cost for the lead auditor can be estimated as \(C_L \times (L_P \times D_P + L_B \times D_B + L_C \times D_C) = C_L \times (L_P + L_B/2 + L_C)\).
+The total cost for the lead auditor can be estimated as $C_L \times (L_P \times D_P + L_B \times D_B + L_C \times D_C) = C_L \times (L_P + L_B/2 + L_C)$.
 
-Assuming the lead auditor outperforms the public auditors, the lead auditor will receive \(P_L + P_D\%\) of the reward pool (50% for the default structure). So, we can estimate the entire reward pool (i.e., the total cost) as \(C_L \times (L_P + L_B/2 + L_C) \times 100 / (P_L + P_D)\).
+Assuming the lead auditor outperforms the public auditors, the lead auditor will receive $P_L + P_D\%$ of the reward pool (50% for the default structure). So, we can estimate the entire reward pool (i.e., the total cost) as $C_L \times (L_P + L_B/2 + L_C) \times 100 / (P_L + P_D)$.
 
-The total turnaround time can be estimated as \(L_P + L_B + L_C + L_J + L_F\) days.
+The total turnaround time can be estimated as $L_P + L_B + L_C + L_J + L_F$ days.
 
 _Example_
-Assuming the lead auditor's engagement cost is \(C_L = 2000\$\) per day and he estimated the duration for Phase 1 as \(L_P = 10\) days. With the default pool structure and the duration of other phases as \(L_B = L_P = 10\), \(L_C = 5\), the total cost would be \(2000 \times (10 + 10/2 + 5) \times 100 / (30 + 20) = \$80,000\), and the total turnaround would be approximately a month, including mitigation turnaround.
+Assuming the lead auditor's engagement cost is $C_L = 2000\$$ per day and he estimated the duration for Phase 1 as $L_P = 10$ days. With the default pool structure and the duration of other phases as $L_B = L_P = 10$, $L_C = 5$, the total cost would be $2000 \times (10 + 10/2 + 5) \times 100 / (30 + 20) = \$80,000$, and the total turnaround would be approximately a month, including mitigation turnaround.
 
 ## 4.6 Summary
 
@@ -464,12 +464,12 @@ Phase 2 will be conducted by a limited set of 5-6 auditors, rather than a public
 
 In these experiments, our focus will be on the following parameters:
 
-- The formula for determining the difficulty of the protocol (\(difficulty = f(SLOC, complexity)\)).
-- The scoring formula for the auditors (\(ES, PS, AS\)).
-- The duration for each phase (\(L_P, L_B, L_C, L_F\)) and the total turnaround time, considering the SLOC and complexity of the protocol.
-- Pool structure (\(P_L, P_B, P_D, P_C, P_J\)) and total cost.
-- Number of contestants (\(N_C\)) in Phase 3.
-- Estimation of the lead auditor's dedication (\(D_P, D_B, D_C, D_F\)) for each phase.
+- The formula for determining the difficulty of the protocol ($difficulty = f(SLOC, complexity)$).
+- The scoring formula for the auditors ($ES, PS, AS$).
+- The duration for each phase ($L_P, L_B, L_C, L_F$) and the total turnaround time, considering the SLOC and complexity of the protocol.
+- Pool structure ($P_L, P_B, P_D, P_C, P_J$) and total cost.
+- Number of contestants ($N_C$) in Phase 3.
+- Estimation of the lead auditor's dedication ($D_P, D_B, D_C, D_F$) for each phase.
 
 We will also consider necessary development approaches to optimize the audit process:
 
