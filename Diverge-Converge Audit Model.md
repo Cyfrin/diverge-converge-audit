@@ -430,14 +430,14 @@ Let's assume the lead auditor's daily cost for 100% dedication is $C_L$.
 
 We estimate the lead auditor's dedication for each phase as follows: $D_P = 100\%$, $D_B = 50\%$, $D_C = 100\%$, $D_F = 0\%$.
 
-The total cost for the lead auditor can be estimated as $C_L \times (L_P \times D_P + L_B \times D_B + L_C \times D_C) = C_L \times (L_P + L_B/2 + L_C)$.
+The total cost for the lead auditor can be estimated as $C_L * (L_P * D_P + L_B * D_B + L_C * D_C) = C_L * (L_P + L_B/2 + L_C)$.
 
-Assuming the lead auditor outperforms the public auditors, the lead auditor will receive $P_L + P_D\%$ of the reward pool (50% for the default structure). So, we can estimate the entire reward pool (i.e., the total cost) as $C_L \times (L_P + L_B/2 + L_C) \times 100 / (P_L + P_D)$.
+Assuming the lead auditor outperforms the public auditors, the lead auditor will receive $P_L + P_D\%$ of the reward pool (50% for the default structure). So, we can estimate the entire reward pool (i.e., the total cost) as $C_L * (L_P + L_B/2 + L_C) * 100 / (P_L + P_D)$.
 
 The total turnaround time can be estimated as $L_P + L_B + L_C + L_J + L_F$ days.
 
 _Example_
-Assuming the lead auditor's engagement cost is $C_L = 2000\$$ per day and he estimated the duration for Phase 1 as $L_P = 10$ days. With the default pool structure and the duration of other phases as $L_B = L_P = 10$, $L_C = 5$, the total cost would be $2000 \times (10 + 10/2 + 5) \times 100 / (30 + 20) = \$80,000$, and the total turnaround would be approximately a month, including mitigation turnaround.
+Assuming the lead auditor's engagement cost is $C_L = 2000\$$ per day and he estimated the duration for Phase 1 as $L_P = 10$ days. With the default pool structure and the duration of other phases as $L_B = L_P = 10$, $L_C = 5$, the total cost would be $2000 * (10 + 10/2 + 5) * 100 / (30 + 20) = \$80,000$, and the total turnaround would be approximately a month, including mitigation turnaround.
 
 ## 4.6 Summary
 
