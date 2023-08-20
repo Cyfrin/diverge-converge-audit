@@ -1,21 +1,23 @@
-# Diverge-Converge Audit Model
+# Multi-Phase Audit
+_Diverge-Converge Audit Model : A new approach to Web3 security review_
 
 Hans
 hans@cyfrin.io
 
 ### Abstract
 
-This whitepaper delves into the exploration of various audit models that are pertinent to Web3 security. In our examination, we weigh the advantages and disadvantages of each model and introduce a novel model that is designed to reach the pinnacle of audit quality.
+This paper delves into the exploration of various audit models that are pertinent to Web3 security. In our examination, we weigh the advantages and disadvantages of each model and introduce a novel model that is designed to reach the pinnacle of audit quality.
 
-Our proposed audit model is structured into three distinct phases: an initial solo audit conducted by a lead auditor, a public time-boxed bug bounty program, and an exclusive auditor competition.
+Our proposed audit model is structured into three essential distinct phases: a solo audit conducted by a lead auditor (or a traditional audit firm), a public epochal time-boxed bug bounty, and an exclusive auditor competition.
 
 In each of these phases, an audit report is generated which helps update and fortify the protocol codebase by addressing the vulnerabilities discovered in the preceding phase.
 
+It is worth noting that the new model is not equal to simple combination of the existing models.
 A unique feature of this model is the way each phase is interlinked with a set of incentives and disincentives, fostering a spirit of rigorous competition amongst auditors.
 
 This model is meticulously crafted to enhance the efficiency of the audit process, striving to minimize both the time and cost associated with the completion of the audit.
 
-Being the first model of its kind to incorporate multiple distinct phases of auditing, we anticipate that it will offer unmatched quality in audits and foresee its wide adoption in the Web3 space.
+Being the first model of its kind to incorporate multiple distinct phases of auditing, we anticipate that it will offer high quality in audits and foresee its wide adoption in the Web3 space.
 
 # 1. Introduction
 
