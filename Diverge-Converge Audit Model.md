@@ -1,5 +1,4 @@
-# Multi-Phase Audit
-_Diverge-Converge Model (DCM) : A new approach to Web3 security review_
+# Multi-Phase Audit: Diverge-Converge Model
 
 [Hans Friese](hans@cyfrin.io), [Patrick Collins](patrick@cyfrin.io), [Alex Roan](alex@cyfrin.io)
 
