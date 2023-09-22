@@ -452,7 +452,7 @@ This phase is primarily focused on reviewing the mitigations of all the findings
 
 All outputs from Phases 1 and 2 are transferred to Phase 3.
 
-A small group of auditors, typically 3-5 including the lead auditor, are chosen as contestants based on their performance in the earlier phases and their auditor score.
+A small group of auditors, typically 3-5 including the lead auditor, are chosen as contestants based on their performance in the Phase 2 and their auditor score.
 
 A new communication channel is opened between the protocol team and the contestants.
 
@@ -563,7 +563,8 @@ We sincerely thank the entire [Cyfrin](https://www.cyfrin.io/) team for their in
 - [1] [DeFi Security Summit 2023 - Session 16: Audits Conventional vs Community Panel](https://www.youtube.com/watch?v=_Yul_fHUjr8&list=PL5r4vTR0gHj5JL62S9R0umY64ue6mfQhd&index=43)
 - [2] [Code4rena](https://code4rena.com/)
 - [3] [Sherlock](https://sherlock.xyz/)
-- [4] [SpearbitDAO](https://spearbit.com/)
-- [5] [AuditOne](https://auditone.io/)
-- [6] [Solidity Metrics](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-metrics) by [Consensys](https://www.consensys.net/)
-- [7] [Report 2022](https://www.chainalysis.com/blog/2022-biggest-year-ever-for-crypto-hacking/) by [Chainalysis](https://www.chainalysis.com/)
+- [4] [Hats.finance](https://app.hats.finance/)
+- [5] [SpearbitDAO](https://spearbit.com/)
+- [6] [AuditOne](https://auditone.io/)
+- [7] [Solidity Metrics](https://marketplace.visualstudio.com/items?itemName=tintinweb.solidity-metrics) by [Consensys](https://www.consensys.net/)
+- [8] [Report 2022](https://www.chainalysis.com/blog/2022-biggest-year-ever-for-crypto-hacking/) by [Chainalysis](https://www.chainalysis.com/)
