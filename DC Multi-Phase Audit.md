@@ -123,7 +123,7 @@ Naturally, tension can arise between these different facets of a high-quality au
 
 # 3. Review of Current Audit Models
 
-In this section, we delve into existing audit models, discussing their advantages and possible shortcomings with a focus on Perfectness. We would like to note that the analysis is partially  based on our subjective estimation and experience and statements in this section are not backed by any data.
+In this section, we delve into existing audit models, discussing their advantages and possible shortcomings with a focus on Perfectness. We would like to note that the analysis is partially based on our subjective estimation, assumption and experience and statements in this section are not backed by any data.
 
 ## 3.1 Traditional Audit
 
@@ -137,7 +137,7 @@ Clients tend to engage auditors who possess a strong reputation within the Web3 
 
 While this model hinges on the auditor's credibility and integrity, we note some of its possible shortcomings.
 
-- First, being a single individual, the auditor may not be equipped to discover all potential vulnerabilities in the protocol.
+- First, being a single individual, the auditor may not be equipped to discover all potential vulnerabilities in the protocol, especially if the protocol is complex.
 
 - Second, the audit process is devoid of brainstorming or collaborative input.
 
@@ -222,6 +222,20 @@ Second, Sherlock introduced an insurance system, the first in the industry. Clie
 
 However, debates surrounding the system's fairness persist, because it is observed that the majority of the prize pool is often rewarded to the lead auditor on top of their fixed percentage of the reward pool.
 
+### 3.3.4 Hats Finance
+[Hats.finance](https://app.hats.finance/) is another platform that organizes contests and bug bounties.
+
+The most innovative feature of Hats is that it is built on a decentralized infrastructure and most of the processes are governed by the community.
+
+While the platform hosts both contests and bug bounties, we will focus on the contest model. The contest model is fairly unique and different from the other platforms.
+
+- Payment based on findings: Rewards in audit competitions are based on the severity and validity of the vulnerabilities found. This means that if no vulnerabilities are discovered, no payments are required, ensuring that resources are spent effectively.
+- First come, first served: Only the first person to find a vulnerability will be rewarded.
+
+All the findings are published as soon as they are identified, allowing auditors to avoid duplicate submissions.
+
+It is notable that the "first come, first served" rule encourages and discourages auditors at the same time. It encourages auditors with a possible high reward, but it also discourages auditors because they may not be rewarded even if they find a vulnerability.
+
 ### 3.3.3 CodeHawks
 
 [CodeHawks](https://www.codehawks.com/) is another new platform that organizes contests for auditing protocols.
@@ -241,7 +255,7 @@ However, the model also has certain possible drawbacks, including:
 - With the rapidly growing number of participants, the incentive to uncover vulnerabilities has diminished significantly, resulting in a possible lack of top-tier engagement.
 - Auditors independently traverse the entire process, from document review to codebase scrutiny, with minimal collaboration. This lack of cooperative brainstorming is a notable drawback, as it limits the opportunity for auditors to learn from each other and incurs a waste of time and effort. Furthermore, competition around the prize pool may discourage auditors from sharing knowledge.
 - Auditors' engagement is limited to a short period, with no long-term relationship established between the client and the auditor.
-
+- Mitigation on the findings is often (not always) missing and not fully reviewed by the auditors, which may lead to new vulnerabilities being introduced during the mitigation process.
 
 ## 3.4 Conclusion
 
