@@ -1,6 +1,6 @@
-# DCM Host Platform Development Roadmap
+# DC MPA Host Platform Development Roadmap
 
-This section outlines the development roadmap for a hosting platform that supports the Diverge-Converge Model.
+This section outlines the development roadmap for a hosting platform that supports the Diverge-Converge Multi-Phase Audit.
 
 ## Execution of the Model as a Host
 
@@ -16,7 +16,7 @@ This section outlines the development roadmap for a hosting platform that suppor
 - Create a repository for Phase 1
 - Initiate the audit process
 
-2. Phase 1: Solo Audit
+2. Phase 1: Traditional Audit by a Lead Auditor
 
 - Set up a project board
 - Establish a Discord channel
