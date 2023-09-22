@@ -222,7 +222,7 @@ Second, Sherlock introduced an insurance system, the first in the industry. Clie
 
 However, debates surrounding the system's fairness persist, because it is observed that the majority of the prize pool is often rewarded to the lead auditor on top of their fixed percentage of the reward pool.
 
-### 3.3.4 Hats Finance
+### 3.3.3 Hats Finance
 [Hats.finance](https://app.hats.finance/) is another platform that organizes contests and bug bounties.
 
 The most innovative feature of Hats is that it is built on a decentralized infrastructure and most of the processes are governed by the community.
@@ -236,13 +236,13 @@ All the findings are published as soon as they are identified, allowing auditors
 
 It is notable that the "first come, first served" rule encourages and discourages auditors at the same time. It encourages auditors with a possible high reward, but it also discourages auditors because they may not be rewarded even if they find a vulnerability.
 
-### 3.3.3 CodeHawks
+### 3.3.4 CodeHawks
 
 [CodeHawks](https://www.codehawks.com/) is another new platform that organizes contests for auditing protocols.
 
 CodeHawks is still in its infancy with only a few contests conducted so far and many features yet to be implemented. It's too early to gauge its effectiveness with the relatively new platform.
 
-### 3.3.4 Concluding Remarks
+### 3.3.5 Concluding Remarks
 
 The community-based audit model has shown promise, with several platforms organizing contests for auditing protocols. The model has gained traction recently, with many protocols opting for this model over the traditional audit model.
 
