@@ -10,3 +10,8 @@ Our proposed audit model is structured into four essential distinct phases: a tr
 It is worth noting that the new model differs from a simple combination of several single-phase audits. A unique feature of this model is how each phase is interlinked with incentives and disincentives, fostering a spirit of rigorous competition amongst auditors.
 
 Being the first model of its kind to incorporate multiple distinct phases of auditing, we anticipate that it will offer high-quality audits and foresee its wide adoption in the Web3 space.
+
+### Generate PDF from TEX
+```
+pdflatex -shell-escape -interaction nonstopmode "DC Multi-Phase Audit.tex"
+```
