@@ -50,6 +50,7 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{caption}
+\usepackage{tabularx}
 
 % Adding breaklines=true to minted's settings seems to produce some errors related to fonts. This is
 % the only fix that worked.
@@ -1300,23 +1301,21 @@ The default pool structure is assumed to be \(P_L=30\), \(P_B=30\),
 
 The overall process is as follows, assuming the default pool structure.
 
-\begin{longtable}[]{@{}lllll@{}}
-\toprule\noalign{}
-Phase & Reward & Participant & Duration & Result \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Traditional Audit by Lead Auditor & 30\% (+20\%) & Lead Auditor &
-\(L_P\) days & Audit Report V1.2, System Analysis Report V1, Commented
-Repo, Walkthrough Video \\
-PET Bug Bounty & 30\% (+20\%) & Public & \(L_B\) days & Audit Report
-V2.0 \\
-Selective Contest & 10\% & Selected Auditors & \(L_C\) days & Audit
-Report V3.1 \\
-Final Review & 0 & Lead Auditor & \(L_F\) days & Final Audit Report,
-Final System Analysis Report \\
-\end{longtable}
+\small
+\begin{tabularx}{\textwidth}{ |X|X|X|X|X| }
+  \hline
+  \textbf{Phase} & \textbf{Reward} & \textbf{Participant} & \textbf{Duration} & \textbf{Result} \\
+  \hline
+  Traditional Audit by Lead Auditor & 30\% (+20\%) & Lead Auditor &
+  \(L_P\) days & Audit Report V1.2\newline System Analysis Report V1\newline Commented Repo, Walkthrough Video\\
+  \hline
+  PET Bug Bounty & 30\% (+20\%) & Public & \(L_B\) days & Audit Report V2.0 \\
+  \hline
+  Selective Contest & 10\% & Selected Auditors & \(L_C\) days & Audit Report V3.1 \\
+  \hline
+  Final Review & 0 & Lead Auditor & \(L_F\) days & Final Audit Report,\newline Final System Analysis Report \\
+  \hline
+  \end{tabularx}
 
 \subsection{ Estimation of Time and
 Cost}\label{46-estimation-of-time-and-cost}
