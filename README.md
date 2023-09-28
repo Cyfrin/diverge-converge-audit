@@ -11,7 +11,12 @@ It is worth noting that the new model differs from a simple combination of sever
 
 Being the first model of its kind to incorporate multiple distinct phases of auditing, we anticipate that it will offer high-quality audits and foresee its wide adoption in the Web3 space.
 
-### Generate PDF from TEX
+### Read the full paper
+- [PDF](./DC%20Multi-Phase%20Audit.pdf)
+- [Markdown](./DC%20Multi-Phase%20Audit.md)
+- [TEX](./DC%20Multi-Phase%20Audit.tex)
+
+### PDF Build Instructions
 ```
 pdflatex -shell-escape -interaction nonstopmode "DC Multi-Phase Audit.tex"
 ```
