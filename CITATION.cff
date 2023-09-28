@@ -12,7 +12,7 @@ authors:
     family-names: Roan
 
 repository-code: 'https://github.com/Cyfrin/diverge-converge-audit'
-
+repository-artifact: 'https://github.com/Cyfrin/diverge-converge-audit/releases'
 url: 'https://www.cyfrin.io/'
 
 abstract: >-
@@ -30,5 +30,5 @@ keywords:
 
 license: CC0-1.0
 commit: e8a8b8bf978e2959e3dc1d1480b72a806f0d0cec
-version: 1.0.5
+version: 1.0.0
 date-released: '2023-09-28'
