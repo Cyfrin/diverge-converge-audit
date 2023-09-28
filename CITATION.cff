@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: Diverge-Converge Multi-Phase Audit Model
 message: Please cite the article using the metadata from this file.
-type: article
+type: dataset
 authors:
   - given-names: Hans
     family-names: Friese
@@ -26,3 +26,13 @@ license: CC0-1.0
 commit: e8a8b8bf978e2959e3dc1d1480b72a806f0d0cec
 version: 1.0.0
 date-released: 2023-09-28
+preferred-citation:
+  type: article
+  title: Diverge-Converge Multi-Phase Audit Model
+  authors:
+    - given-names: Hans
+      family-names: Friese
+    - given-names: Patrick
+      family-names: Collins
+    - given-names: Alex
+      family-names: Roan
