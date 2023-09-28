@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: Diverge-Converge Multi-Phase Audit Model
+message: >-
+  Please cite the article using the metadata from this file.
+type: article
+authors:
+  - given-names: Hans
+    family-names: Friese
+  - given-names: Patrick
+    family-names: Collins
+  - given-names: Alex
+    family-names: Roan
+repository-code: 'https://github.com/Cyfrin/diverge-converge-audit.git'
+url: 'https://www.cyfrin.io/'
+abstract: >-
+  In this paper, we explore the shortcomings of current audit models and present the Diverge-Converge Multi-Phase Audit (DC MPA), a novel approach aimed at boosting the quality and efficiency of audits in the Web3 sphere.
+  Our proposed audit model is structured into four essential distinct phases: a traditional audit conducted by a lead (personal auditor or a team of auditors or an audit firm), a public epochal time-boxed bug bounty (PET bug bounty), an exclusive competition, and a final review. Additional phases can be added according to the protocol's preference.
+  It is worth noting that the new model differs from a simple combination of several single-phase audits. A unique feature of this model is how each phase is interlinked with incentives and disincentives, fostering a spirit of rigorous competition amongst auditors.
+  Being the first model of its kind to incorporate multiple distinct phases of auditing, we anticipate that it will offer high-quality audits and foresee its wide adoption in the Web3 space.
+
+keywords:
+  - Smart Contract
+  - Security Review
+  - Audit
+  - Bug Detection
+  - Software Engineering
+license: CC0-1.0
+date-released: '2023-09-28'
