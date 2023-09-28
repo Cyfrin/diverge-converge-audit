@@ -10,8 +10,11 @@ authors:
     family-names: Collins
   - given-names: Alex
     family-names: Roan
-repository-code: 'https://github.com/Cyfrin/diverge-converge-audit.git'
+
+repository-code: 'https://github.com/Cyfrin/diverge-converge-audit'
+
 url: 'https://www.cyfrin.io/'
+
 abstract: >-
   In this paper, we explore the shortcomings of current audit models and present the Diverge-Converge Multi-Phase Audit (DC MPA), a novel approach aimed at boosting the quality and efficiency of audits in the Web3 sphere.
   Our proposed audit model is structured into four essential distinct phases: a traditional audit conducted by a lead (personal auditor or a team of auditors or an audit firm), a public epochal time-boxed bug bounty (PET bug bounty), an exclusive competition, and a final review. Additional phases can be added according to the protocol's preference.
@@ -24,5 +27,8 @@ keywords:
   - Audit
   - Bug Detection
   - Software Engineering
+
 license: CC0-1.0
+commit: e8a8b8bf978e2959e3dc1d1480b72a806f0d0cec
+version: 1.0.5
 date-released: '2023-09-28'
