@@ -220,7 +220,7 @@ First, the platform has introduced a scoring system for participants. Scores are
 
 Second, Sherlock introduced an insurance system, the first in the industry. Clients can insure their protocols, with the insurance compensating clients in the event of a hack or exploit. While the effectiveness of this system remains to be seen, it represents a noteworthy advancement in terms of post-deployment support.
 
-However, debates surrounding the system's fairness persist, because it is observed that the majority of the prize pool is often rewarded to the lead auditor on top of their fixed percentage of the reward pool.
+However, there still exists similar issues as Code4rena, such as the participants are kind of random for every contest and are only engaged for a short time.
 
 ### 3.3.3 Hats Finance
 [Hats.finance](https://app.hats.finance/) is another platform that organizes contests and bug bounties.
